@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+.card{
+    width: 620px;
+    display: grid;
+    margin: 30px;
+}
+.cards1{
+    background-color: white;
+    grid-column: span 2;
+    padding: 1.7rem 2rem;
+}
+.cards2{
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.7rem 2rem;
+    color: white;
+}
+.cards2 h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+span{
+    font-size: 14px;
+    font-weight: 100;
+}
+.cards3{
+    background-color: hsl(179, 62%, 43%, .5);
+    padding: 1.7rem 2rem;
+    color: white;
+    line-height: 1.4rem;
+}
+.cards3 p{
+    padding: 1rem 0;
+}
+.cards1 h2{
+    color: hsl(179, 62%, 43%);
+    padding: 1rem 0;
+}
+.first-p{
+    color: hsl(71, 73%, 54%);
+}
+.second-p{
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+.btn{
+    border: none;
+    width: 100%;
+    margin: 2rem 0 0.5rem 0;
+    padding: 0.8rem 2rem;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media (max-width: 500px){
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+        display: block;
+        margin: 25px;
+        width: 100%;
+    }
+}
